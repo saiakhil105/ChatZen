@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aguafina_script</item>
+        <item>@font/allan</item>
+        <item>@font/bangers</item>
+        <item>@font/caveat_brush</item>
+        <item>@font/chela_one</item>
+        <item>@font/fontdiner_swanky</item>
+        <item>@font/fugaz_one</item>
+        <item>@font/kalam_bold</item>
+        <item>@font/lemon</item>
+        <item>@font/racing_sans_one</item>
+        <item>@font/rock_salt</item>
+        <item>@font/sarina</item>
+        <item>@font/shrikhand</item>
+        <item>@font/sonsie_one</item>
+        <item>@font/timmana</item>
+        <item>@font/trade_winds</item>
+        <item>@font/wendy_one</item>
+        <item>@font/yellowtail</item>
+        <item>@font/yesteryear</item>
+    </array>
+</resources>

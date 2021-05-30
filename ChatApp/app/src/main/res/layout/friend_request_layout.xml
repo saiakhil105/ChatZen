@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llFriendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#303030"
+                android:paddingLeft="10dp"
+                tools:text="User Name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnaccept"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"
+                    android:textColor="#FFF"
+                    android:background="@drawable/round_button"
+                    android:text="ACCEPT" />
+
+                <Button
+                    android:id="@+id/btndeny"
+                    android:layout_width="85dp"
+                    android:textSize="14dp"
+                    android:textColor="#FFF"
+                    android:background="@drawable/round_button"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="35dp"
+                    android:text="DENY" />
+
+                <ProgressBar
+                    android:id="@+id/pbDecision"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000"
+        android:layout_below="@id/llFriendRequest"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>
